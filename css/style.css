@@ -30,15 +30,19 @@ img{ border: none;}
 
 
 /*레이아웃*/
-#hd{ padding: 15px 0; }
+#hd{ padding: 15px 0;}
 
 #hd a, #hd img{ display: block; }
-#gnb>li>a{ font-weight: bold; font-size: 18px; line-height: 46px; margin-left: 2em;}
-#gnb .d2{ background-color: black; left:0; top:calc(100% + 15px); width: 121px;}
-#gnb .d2 a{ font-size: .9em; line-height: 1.5; color: white; text-align: center;}
+#gnb>li{ background: green; height: 46px; }
+#gnb>li>a{ font-weight: bold; font-size: 18px; line-height: 46px; padding-left: 2em;
+           padding-bottom: 15px; background: yellow;}
+#gnb .d2{ background-color: black; left:0; top:calc(100% + 15px); width: 121px;
+          height: 0; transition: .5s; overflow: hidden;}
+#gnb .d2 a{ font-size: .9em; line-height: 1.5; color: white;}
 
 #gnb li:nth-child(1){ }
 #gnb li:nth-child(4){ }
+#gnb>li:hover .d2{ height: 100px;}
 
 #main{}
 
